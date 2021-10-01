@@ -27,8 +27,8 @@ class ContainerViewController : UIViewController, UIScrollViewDelegate {
         return bottomVC.pagerTabHeight ?? 44
     }
     
-    weak var dataSource: TPDataSource!
-    weak var delegate: TPProgressDelegate?
+    var dataSource: TPDataSource!
+    var delegate: TPProgressDelegate?
     
     private var headerView: UIView!{
         return headerVC.view
